@@ -95,7 +95,7 @@ $conexion->close();
 
 <h2>Nuestros productos</h2>
 
-<p>Bebidas y productos esenciales para el hogar.</p>
+<p>Bebidas, snacks, articulos del hogar y basicos para resolver la compra del dia.</p>
 
 <?php if ($mensajeExito !== ''): ?>
 <div class="alerta alerta-exito carrito-alerta">
