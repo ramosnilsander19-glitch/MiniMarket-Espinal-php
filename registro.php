@@ -1,5 +1,5 @@
 <?php
-require_once 'config/auth.php';
+require_once 'sistema/acceso.php';
 redirigir_si_autenticado();
 
 $nombre = '';
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if (!$errores) {
-        require_once 'config/db.php';
+        require_once 'sistema/conexion.php';
 
         $usaRol = columna_rol_usuarios_disponible($conexion);
 

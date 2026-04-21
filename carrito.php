@@ -1,5 +1,5 @@
 <?php
-require_once 'config/auth.php';
+require_once 'sistema/acceso.php';
 
 $mensajeExito = '';
 $errores = [];
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if (!$carritoActual) {
                 $errores[] = 'El carrito está vacío.';
             } else {
-                require_once 'config/db.php';
+                require_once 'sistema/conexion.php';
 
                 $tablaCompras = $conexion->query("SHOW TABLES LIKE 'compras'");
                 $tablaDetalles = $conexion->query("SHOW TABLES LIKE 'compra_detalles'");

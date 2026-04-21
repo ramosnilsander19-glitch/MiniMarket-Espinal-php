@@ -1,7 +1,7 @@
 <?php
-require_once 'config/auth.php';
+require_once 'sistema/acceso.php';
 redirigir_si_no_admin();
-require_once 'config/db.php';
+require_once 'sistema/conexion.php';
 
 $usuarioSesion = usuario_actual();
 $usuarios = [];

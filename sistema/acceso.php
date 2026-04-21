@@ -3,7 +3,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
-require_once __DIR__ . '/cart.php';
+require_once __DIR__ . '/carrito.php';
 
 define('CORREO_ADMIN_PRINCIPAL', 'minimarketespinal@gmail.com');
 

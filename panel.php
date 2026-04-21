@@ -1,5 +1,5 @@
 <?php
-require_once 'config/auth.php';
+require_once 'sistema/acceso.php';
 redirigir_si_no_autenticado();
 
 $usuario = usuario_actual();

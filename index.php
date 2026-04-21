@@ -1,4 +1,4 @@
-<?php require_once 'config/auth.php'; ?>
+<?php require_once 'sistema/acceso.php'; ?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
